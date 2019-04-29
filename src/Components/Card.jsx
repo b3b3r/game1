@@ -9,7 +9,7 @@ class Card extends Component {
                     <img className="image-character" src="https://via.placeholder.com/150" alt="Personnage" />
                 </div>
                 <div className="description-character">
-                    <h2 className="title-character">Nom carte</h2>
+                    <h2 className="title-character">{this.props.name}</h2>
                     <p className="detail-character">Description</p>
                     <div className="perks-character">
                         <p className="attack">Attaque</p>
