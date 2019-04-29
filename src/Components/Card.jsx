@@ -6,14 +6,13 @@ class Card extends Component {
         return (
             <div className="Card">
                 <div>
-                    <img className="image-character" src="https://via.placeholder.com/150" alt="Personnage" />
+                    <img className="image-character" src={this.props.image} alt="Personnage" />
                 </div>
                 <div className="description-character">
                     <h2 className="title-character">{this.props.name}</h2>
-                    <p className="detail-character">Description</p>
                     <div className="perks-character">
-                        <p className="attack">Attaque</p>
-                        <p className="defense">Défense</p>
+                        <p className="attack">{this.props.attack}</p>
+                        <p className="defense">{this.props.health}</p>
                     </div>
                 </div>
             </div>
