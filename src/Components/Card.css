@@ -1,35 +1,3 @@
-.Card {
-    display: flex;
-    border: 2px solid black;
-    text-align: center;
-    flex-direction: column;
-    width: 20vh;
-}
-
-.Card .image-character {
-    width: 100%;
-}
-
-.Card .title-character {
-    margin: 0.5vh;
-    font-size: 2.5vh;
-}
-
-.Card .detail-character {
-    font-style: italic;
-}
-
-.Card .description-character .perks-character {
-    display: flex;
-    justify-content: space-between;
-}
-
-.Card .description-character .perks-character .attack {
-    margin: 0.5vh;
-    font-size: 1.5vh;
-}
-
-.Card .description-character .perks-character .defense {
-    margin: 0.5vh;
-    font-size: 1.5vh;
+.Card .image-character:hover {
+    width: 350px
 }

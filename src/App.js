@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import ListCards from './Components/ListCards';
+import Random from './Components/Random';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ListCards />
+        <Random />
       </div>
     );
   }
