@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import ReactModal from 'react-modal'
 import './Random.css';
 
 class Random extends Component {
@@ -25,7 +26,8 @@ class Random extends Component {
         let deck = this.state.deck
         deck.push(result)
         this.setState({
-            deck: deck
+            deck: deck,
+            isOpen: true
         })
     }
 
@@ -44,9 +46,16 @@ class Random extends Component {
         })
      } */
 
+    handleAfterOpenFunc=()=>{
+        this.setState({isOpen: !this.state.isOpen})
+    }
+
     render() {
         return (
             <div className="Random">
+                <ReactModal
+                    isOpen={false}
+                 />
                 <button onClick={this.getRandomInt}>Jouer</button>
                 <div className="deck">
                     {this.state.deck.map(x => <Card
@@ -54,6 +63,7 @@ class Random extends Component {
                         image={`https://art.hearthstonejson.com/v1/render/latest/frFR/256x/${x.id}.png`}
                     />)}
                 </div>
+                <button onClick={this.handleAfterOpenFunc}>modal</button>
             </div>
         );
     }
