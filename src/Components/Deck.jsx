@@ -33,7 +33,8 @@ class Deck extends Component {
       .then(res => res.json())
       .then(cards => this.setState({
         cards: cards.filter(x => x.type === 'MINION' && x.rarity === 'LEGENDARY')
-      }))
+      }));
+    
   }
 
   getRandomInt = () => {
@@ -95,7 +96,7 @@ class Deck extends Component {
           <button onClick={this.closeModal}>Valider</button>
         </Modal>
         <div className="deck-definitive">
-          {this.state.deck.map((x,index) => <Card
+          {this.state.deck.map((x, index) => <Card
             image={`https://art.hearthstonejson.com/v1/render/latest/frFR/256x/${x.id}.png`}
             style={`image-character${index}`}
           />)}
