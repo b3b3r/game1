@@ -1,3 +1,105 @@
-.Card .image-character:hover {
-    width: 350px
+.Card .image-character0{
+    position: absolute;
+    left: 0%;
+}
+
+.Card .image-character1{
+    position: absolute;
+    left: 8%;
+}
+
+.Card .image-character2{
+    position: absolute;
+    left: 16%;
+}
+
+.Card .image-character3{
+    position: absolute;
+    left: 24%;
+}
+
+.Card .image-character4{
+    position: absolute;
+    left: 30%;
+}
+
+.Card .image-character5{
+    position: absolute;
+    left: 36%;
+}
+
+.Card .image-character6{
+    position: absolute;
+    left: 42%;
+}
+
+.Card .image-character7{
+    position: absolute;
+    left: 48%;
+}
+
+.Card .image-character8{
+    position: absolute;
+    left: 54%;
+}
+
+.Card .image-character9{
+    position: absolute;
+    left: 60%;
+}
+
+.Card .image-character10{
+    position: absolute;
+    left: 66%;
+}
+
+.Card .image-character0:hover {
+    z-index: 2;
+    width: 400px;
+    
+}
+
+.Card .image-character1:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character2:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character3:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character4:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character5:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character6:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character7:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character8:hover {
+    z-index: 2;
+    width: 400px
+}
+
+.Card .image-character9:hover {
+    z-index: 2;
+    width: 400px
 }

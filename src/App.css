@@ -1,3 +1,6 @@
-/* .App {
+.App {
   text-align: center;
-} */
+  background: url('/hearthstone_ligue_explorateurs_board_Hall.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh
+}
