@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import ReactModal from 'react-modal'
 import './Random.css';
 
 class Random extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             cards: [],
             random: [],
@@ -22,40 +21,19 @@ class Random extends Component {
     }
 
     getRandomInt = () => {
-        let result = this.state.cards[Math.round(Math.random() * this.state.cards.length)];
         let deck = this.state.deck
-        deck.push(result)
-        this.setState({
-            deck: deck,
-            isOpen: true
-        })
-    }
-
-    getRandom = (nb) => {
-        for (let i = 0; i < nb; i++) {
-            console.log('coucou');
+        for (let i = 0; i < 3; i++) {
+            let result = this.state.cards[Math.round(Math.random() * this.state.cards.length)];
+            deck.push(result)
         }
-    }
-
-    /*  getCards = () => {
-        let result = this.state.cards[Math.round(Math.random() * this.state.cards.length)];
-        let deck = this.state.deck
-        deck.push(result)
         this.setState({
             deck: deck
         })
-     } */
-
-    handleAfterOpenFunc=()=>{
-        this.setState({isOpen: !this.state.isOpen})
     }
 
     render() {
         return (
             <div className="Random">
-                <ReactModal
-                    isOpen={false}
-                 />
                 <button onClick={this.getRandomInt}>Jouer</button>
                 <div className="deck">
                     {this.state.deck.map(x => <Card
@@ -63,7 +41,6 @@ class Random extends Component {
                         image={`https://art.hearthstonejson.com/v1/render/latest/frFR/256x/${x.id}.png`}
                     />)}
                 </div>
-                <button onClick={this.handleAfterOpenFunc}>modal</button>
             </div>
         );
     }
